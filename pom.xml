@@ -28,7 +28,7 @@
     </parent>
     <groupId>com.github.efcloud</groupId>
     <artifactId>kafka-config-provider-aws</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>${version}</version>
     <name>kafka-config-provider-aws</name>
     <description>A Kafka Connect ConfigProvider for AWS Secrets Manager</description>
     <url>https://github.com/jcustenborder/kafka-config-provider-aws</url>
