@@ -28,7 +28,7 @@
     </parent>
     <groupId>com.github.efcloud</groupId>
     <artifactId>kafka-config-provider-aws</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.0-SNAPSHOT</version>
     <name>kafka-config-provider-aws</name>
     <description>A Kafka Connect ConfigProvider for AWS Secrets Manager</description>
     <url>https://github.com/jcustenborder/kafka-config-provider-aws</url>
@@ -94,6 +94,35 @@
     </distributionManagement>
     <build>
         <plugins>
+            <plugin>
+                <groupId>io.confluent</groupId>
+                <artifactId>kafka-connect-maven-plugin</artifactId>
+                <version>0.11.2</version>
+                <executions>
+                    <execution>
+                        <id>hub</id>
+                        <goals>
+                            <goal>kafka-connect</goal>
+                        </goals>
+                        <configuration>
+                            <confluentControlCenterIntegration>true</confluentControlCenterIntegration>
+                            <documentationUrl>https://jcustenborder.github.io/kafka-connect-documentation/projects/kafka-config-provider-aws/</documentationUrl>
+                            <componentTypes>
+                                <componentType>converter</componentType>
+                            </componentTypes>
+                            <tags>
+                                <tag>aws</tag>
+                                <tag>secrets manager</tag>
+                            </tags>
+                            <title>Kafka AWS Secrets Manager Config Provider</title>
+                            <supportUrl>https://github.com/jcustenborder/kafka-config-provider-aws/issues</supportUrl>
+                            <supportSummary>
+                                <![CDATA[Community Support]]>
+                            </supportSummary>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
