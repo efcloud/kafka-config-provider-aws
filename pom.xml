@@ -30,7 +30,7 @@
     <artifactId>kafka-config-provider-aws</artifactId>
     <version>0.1-SNAPSHOT</version>
     <name>kafka-config-provider-aws</name>
-    <description>A Kafka Connect ConfigProvider for AWS Secrets Manager</description>
+    <description>A Kafka Connect plugin for interacting with Redis.</description>
     <url>https://github.com/jcustenborder/kafka-config-provider-aws</url>
     <inceptionYear>2021</inceptionYear>
     <licenses>
