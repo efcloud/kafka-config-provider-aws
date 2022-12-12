@@ -28,7 +28,7 @@
     </parent>
     <groupId>com.github.efcloud</groupId>
     <artifactId>kafka-config-provider-aws</artifactId>
-    <version>${version}</version>
+    <version>0.1-SNAPSHOT</version>
     <name>kafka-config-provider-aws</name>
     <description>A Kafka Connect ConfigProvider for AWS Secrets Manager</description>
     <url>https://github.com/jcustenborder/kafka-config-provider-aws</url>
@@ -120,25 +120,6 @@
                                 <![CDATA[Community Support]]>
                             </supportSummary>
                         </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.4.2</version>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>assemble-all</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
                     </execution>
                 </executions>
             </plugin>
